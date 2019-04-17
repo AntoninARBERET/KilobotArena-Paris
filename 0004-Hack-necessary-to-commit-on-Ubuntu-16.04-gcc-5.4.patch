@@ -1,0 +1,27 @@
+From 6b5e1d19a39881a46f5be5dce7180e1a343dfd18 Mon Sep 17 00:00:00 2001
+From: Stephane Gourichon <stephane.gourichon@fidergo.fr>
+Date: Thu, 11 Apr 2019 12:54:39 +0000
+Subject: [PATCH 4/4] Hack necessary to commit on Ubuntu 16.04 (gcc 5.4).
+
+Else qmake would generate --std=c++0x instead of --std=c++11 and GCC
+5.4 would fail to compile.
+---
+ KilobotArena.pro | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/KilobotArena.pro b/KilobotArena.pro
+index 053a118..b0ddce9 100644
+--- a/KilobotArena.pro
++++ b/KilobotArena.pro
+@@ -52,7 +52,7 @@ FORMS    += mainwindow.ui
+ 
+ linux {
+ 
+-
++QMAKE_CXXFLAGS += -std=c++11
+ 
+ !use_opencv3 {
+ 
+-- 
+2.7.4
+

@@ -1,0 +1,44 @@
+From 310c276c80a8e487a320aa65465285b40b9034d2 Mon Sep 17 00:00:00 2001
+From: Stephane Gourichon <stephane.gourichon@fidergo.fr>
+Date: Thu, 11 Apr 2019 12:53:40 +0000
+Subject: [PATCH 3/4] Remove references to unnecessary libraries...
+
+... which were not present here (Ubuntu 16.04, OpenCV 3.1).
+---
+ KilobotArena.pro | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/KilobotArena.pro b/KilobotArena.pro
+index a3646c4..053a118 100644
+--- a/KilobotArena.pro
++++ b/KilobotArena.pro
+@@ -71,26 +71,20 @@ DEFINES += USE_OPENCV3
+ #LIBS += -L/opt/local/lib \
+ INCLUDEPATH += /usr/local/include/
+ LIBS += -L/usr/local/lib/ \
+-        -lopencv_ocl \
+         -lopencv_core \
+         -lopencv_imgproc \
+         -lopencv_features2d\
+         -lopencv_highgui\
+-        -lopencv_contrib\
+         -lopencv_calib3d\
+         -lopencv_objdetect\
+         -lopencv_photo\
+         -lopencv_stitching\
+         -lopencv_flann\
+-        -lopencv_gpu \
+-        -lopencv_legacy \
+         -lopencv_ml \
+         -lopencv_objdetect  \
+-        -lopencv_ocl \
+         -lopencv_photo \
+         -lopencv_stitching \
+         -lopencv_superres \
+-        -lopencv_ts \
+         -lopencv_video \
+         -lopencv_videostab \
+         -lopencv_videoio \
+-- 
+2.7.4
+

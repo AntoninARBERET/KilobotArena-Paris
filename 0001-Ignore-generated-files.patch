@@ -1,0 +1,26 @@
+From aa825c7c0035ded454741e3143a3c74b40cc6844 Mon Sep 17 00:00:00 2001
+From: Stephane Gourichon <stephane.gourichon@fidergo.fr>
+Date: Thu, 11 Apr 2019 12:49:27 +0000
+Subject: [PATCH 1/4] Ignore generated files.
+
+---
+ .gitignore | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 .gitignore
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..f09b7ba
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,7 @@
++*.o
++moc_*.cpp
++Makefile
++ui_mainwindow.h
++qrc_ressources.cpp
++*~
++KilobotArena
+-- 
+2.7.4
+

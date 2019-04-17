@@ -71,6 +71,7 @@ DEFINES += USE_OPENCV3
 #LIBS += -L/opt/local/lib \
 INCLUDEPATH += /usr/local/include/
 LIBS += -L/usr/local/lib/ \
+        -lopencv_ocl \
         -lopencv_core \
         -lopencv_imgproc \
         -lopencv_features2d\

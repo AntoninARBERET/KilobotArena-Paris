@@ -1,0 +1,25 @@
+From b5c89351b538b171ce19556121e79d829f1e5688 Mon Sep 17 00:00:00 2001
+From: Stephane Gourichon <stephane.gourichon@fidergo.fr>
+Date: Thu, 11 Apr 2019 12:51:11 +0000
+Subject: [PATCH 2/4] OpenCV 3 no longer has gpu/gpu.hpp
+
+Ref http://answers.opencv.org/question/105308/where-to-find-opencv2gpugpuhpp-in-opencv-310/
+---
+ kilobottracker.h | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/kilobottracker.h b/kilobottracker.h
+index 07f61a0..3369ce9 100644
+--- a/kilobottracker.h
++++ b/kilobottracker.h
+@@ -55,7 +55,6 @@ using namespace std;
+ //#include <opencv2/tracking/tracker.hpp>
+ #include <opencv2/videoio.hpp>
+ #include <opencv2/core/ocl.hpp>
+-#include <opencv2/gpu/gpu.hpp>
+ #include <opencv2/cudaarithm.hpp>
+ #include <opencv2/cudaimgproc.hpp>
+ #include <opencv2/cudafilters.hpp>
+-- 
+2.7.4
+
