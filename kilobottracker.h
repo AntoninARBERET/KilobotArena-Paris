@@ -102,8 +102,8 @@ struct srcBuffer {
 
 #define BUFF_SIZE 2
 
-#define IM_WIDTH 2048
-#define IM_HEIGHT 1536
+#define IM_WIDTH 1920
+#define IM_HEIGHT 1080
 
 #define IDENTIFY_TIMEOUT 10
 

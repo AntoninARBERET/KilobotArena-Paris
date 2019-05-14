@@ -129,7 +129,7 @@ private:
                         cap.open(camOrder[index]);
                         // set REZ
                         if (cap.isOpened()) {
-                            cap.set(CV_CAP_PROP_FOURCC, CV_FOURCC('M','J','P','G'));
+                            //cap.set(CV_CAP_PROP_FOURCC, CV_FOURCC('M','J','P','G'));
                             cap.set(CV_CAP_PROP_FRAME_WIDTH, IM_WIDTH);
                             cap.set(CV_CAP_PROP_FRAME_HEIGHT, IM_HEIGHT);
                         } else {
